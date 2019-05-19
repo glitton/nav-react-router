@@ -10,13 +10,26 @@ body {
   padding: 1em;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
-li {
+nav ul li {
   display: inline;
-  padding: 5px;
+  margin: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: aqua;
 }

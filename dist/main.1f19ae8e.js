@@ -29801,7 +29801,9 @@ function (_Component) {
   _createClass(Nav, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("nav", null, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+      return _react.default.createElement("nav", null, _react.default.createElement("ul", null, _react.default.createElement("li", {
+        className: "active"
+      }, _react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, "Home")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/about"
@@ -29931,6 +29933,11 @@ function (_Component) {
   }
 
   _createClass(Home, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.body.style.backgroundColor = 'azure';
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("h1", null, "My app"), _react.default.createElement("p", null, "Welcome to Bennie's app"));
@@ -29983,6 +29990,11 @@ function (_Component) {
   }
 
   _createClass(About, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.body.style.backgroundColor = 'khaki';
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("h1", null, "About me"), _react.default.createElement("p", null, "I was rescued and now I have so much love!"), _react.default.createElement("img", {
@@ -30040,6 +30052,11 @@ function (_Component) {
   }
 
   _createClass(Contact, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.body.style.backgroundColor = 'goldenrod';
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Contact Me!"), _react.default.createElement("p", null, "email: bennie@pittbull.com"));
