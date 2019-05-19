@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.1f19ae8e.css","sourceRoot":"..","sourcesContent":["body {\n  background-color: azure;\n}\n\n#app-container {\n  margin: 50px auto;\n  width: 1800px;\n  background-color: whitesmoke;\n  border: solid black 1px;\n  padding: 1em;\n}"]}
